@@ -238,7 +238,7 @@ body {
   background-color: white;
   border: 2px solid white;
   height: 30rem;
-  width: 20rem;
+  width: 19.4rem;
 }
 .heading {
   padding-top: 1.5rem;
@@ -290,7 +290,7 @@ body {
   position: relative;
   top: 90%;
   font-size: 0.85rem;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 .card-pic2 p {
   position: relative;
@@ -302,7 +302,7 @@ body {
   position: relative;
   top: 90%;
   font-size: 0.85rem;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 .card-pic4 p {
   position: relative;
@@ -311,8 +311,8 @@ body {
   margin-left: 10%;
 }
 .see-more {
-  margin-top: 20%;
-  margin-left: 2%;
+  margin-top: 35%;
+  margin-left: 8%;
   color: blue;
   font-size: 0.85rem;
 }
@@ -321,4 +321,28 @@ body {
   height: 30px;
   border: 2px solid black;
   background-color: blue;
+}
+.card-pic5 {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-image: url("card-pic5.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.pic-div5 {
+  /* background-color: blue; */
+  height: 70%;
+  width: 100%;
+  display: flex;
+}
+.see-more5 {
+  margin-top: 12%;
+  margin-left: 8%;
+  color: blue;
+  font-size: 0.85rem;
 }
