@@ -11,8 +11,7 @@ body {
   background-color: #131921;
   display: flex;
   flex-wrap: wrap;
-
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 .logo {
@@ -41,7 +40,7 @@ body {
 }
 .nav-address {
   height: 50px;
-  width: 8%;
+  width: 100px;
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -98,7 +97,7 @@ body {
 }
 .signin {
   height: 50px;
-  width: 8%;
+  width: 110px;
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -117,7 +116,7 @@ body {
 }
 .order {
   height: 50px;
-  width: 6%;
+  width: 80px;
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -136,7 +135,8 @@ body {
 }
 .cart {
   height: 50px;
-  width: 6%;
+  width: 60px;
+  margin-right: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -173,6 +173,9 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
+}
+.nav-emburger {
+  display: none;
 }
 
 .all {
@@ -230,10 +233,9 @@ body {
 }
 .card-main {
   position: relative;
-  /* top: -20rem;
-  bottom: 20rem; */
   display: flex;
   flex-wrap: wrap;
+
   justify-content: space-evenly;
 
   /* backdrop-filter: blur(10px); */
@@ -242,7 +244,10 @@ body {
   background-color: white;
   border: 2px solid white;
   height: 26rem;
-  width: 19.4rem;
+  width: 18rem;
+
+  margin-left: 5px;
+  margin-right: 5px;
   margin-top: 2%;
   box-shadow: 4px 4px 12px 3px gray;
 }
@@ -328,7 +333,7 @@ body {
   margin-left: 1%;
 }
 .see-more {
-  margin-top: 25%;
+  margin-top: 4.9rem;
   margin-left: 8%;
   color: blue;
   font-size: 0.85rem;
@@ -365,13 +370,13 @@ body {
   display: flex;
 }
 .see-more5 {
-  margin-top: 16%;
+  margin-top: 3.2rem;
   margin-left: 8%;
   color: blue;
   font-size: 0.85rem;
 }
 .see-more6 {
-  margin-top: 7%;
+  margin-top: 1.4rem;
   margin-left: 8%;
   color: blue;
   font-size: 0.85rem;
@@ -469,4 +474,75 @@ body {
   text-align: center;
   color: white;
   font-size: 0.8rem;
+}
+@media (max-width: 1337px) {
+  .nav-select {
+    width: 37rem;
+  }
+  .Signin2,
+  .Signin1,
+  .deliver,
+  .order1,
+  .order2,
+  .cart1 {
+    font-size: 0.8rem;
+  }
+  @media (max-width: 1156px) {
+    .nav-select {
+      width: 32rem;
+    }
+  }
+  @media (max-width: 1058px) {
+    .nav-select {
+      width: 30rem;
+    }
+    .cart1 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1033px) {
+  /* Your CSS rules for small screens here */
+  .nav-address,
+  .nav-select,
+  .signin,
+  .order,
+  .cart,
+  .lang {
+    display: none;
+  }
+  .nav-emburger {
+    display: block;
+    margin-right: 20px;
+  }
+  .electronics {
+    margin-left: 37rem;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1235px) {
+  .card {
+    width: 23rem;
+    /* height: 27rem; */
+  }
+  .card-pic4,
+  .card-pic3,
+  .card-pic2,
+  .card-pic1 {
+    height: 8rem;
+    width: 10rem;
+  }
+  .see-more6 {
+    margin-top: 3rem;
+  }
+  .see-more {
+    margin-top: 4.5rem;
+  }
+  .see-more5 {
+    margin-top: 3rem;
+  }
 }
