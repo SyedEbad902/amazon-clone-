@@ -7,10 +7,10 @@ body {
   background-color: #e3e6e6;
 }
 .navbar {
+  width: 100%;
   height: 60px;
   background-color: #131921;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -63,9 +63,9 @@ body {
 }
 .nav-select {
   height: 3rem;
-  width: 40rem;
-
+  width: 650px;
   display: flex;
+  align-items: center;
 }
 #search-select {
   height: 2.5rem;
@@ -221,23 +221,22 @@ body {
 
 .image-sec {
   height: 100%;
-  width: 100%;
+  width: 80.4vw;
 }
 .bg-image {
-  background-image: url("background-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 40rem;
   display: flex;
+  width: 100%;
   justify-content: center;
 }
 .card-main {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-
-  justify-content: space-evenly;
-
+  justify-content: center;
+  gap: 5px;
   /* backdrop-filter: blur(10px); */
 }
 .card {
@@ -435,6 +434,7 @@ body {
   margin-top: 5%;
   margin-left: 10%;
   height: 20rem;
+  
   /* background-color: pink; */
   width: 15%;
   color: white;
@@ -477,7 +477,7 @@ body {
 }
 @media (max-width: 1337px) {
   .nav-select {
-    width: 37rem;
+    width: 620px;
   }
   .Signin2,
   .Signin1,
@@ -487,44 +487,12 @@ body {
   .cart1 {
     font-size: 0.8rem;
   }
-  @media (max-width: 1156px) {
-    .nav-select {
-      width: 32rem;
-    }
-  }
-  @media (max-width: 1058px) {
-    .nav-select {
-      width: 30rem;
-    }
-    .cart1 {
-      display: none;
-    }
-  }
-}
-
-@media (max-width: 1033px) {
-  /* Your CSS rules for small screens here */
-  .nav-address,
-  .nav-select,
-  .signin,
-  .order,
-  .cart,
-  .lang {
-    display: none;
-  }
-  .nav-emburger {
-    display: block;
-    margin-right: 20px;
-  }
-  .electronics {
-    margin-left: 37rem;
-  }
-  .navbar {
-    justify-content: space-between;
-  }
 }
 
 @media (max-width: 1235px) {
+  .nav-select {
+    width: 600px;
+  }
   .card {
     width: 23rem;
     /* height: 27rem; */
@@ -544,5 +512,43 @@ body {
   }
   .see-more5 {
     margin-top: 3rem;
+  }
+}
+
+@media (max-width: 1190px) {
+  .nav-select {
+    width: 540px;
+  }
+  .cart1 {
+    display: none;
+  }
+}
+@media (max-width: 1108px) {
+  .nav-select {
+    width: 480px;
+  }
+  .cart1 {
+    display: none;
+  }
+}
+@media (max-width: 1037px) {
+  /* Your CSS rules for small screens here */
+  .nav-address,
+  .nav-select,
+  .signin,
+  .order,
+  .cart,
+  .lang {
+    display: none;
+  }
+  .nav-emburger {
+    display: block;
+    margin-right: 20px;
+  }
+  .electronics {
+    margin-left: 37rem;
+  }
+  .navbar {
+    justify-content: space-between;
   }
 }
